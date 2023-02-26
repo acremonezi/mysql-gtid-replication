@@ -1,0 +1,10 @@
+[mysqld]
+
+# GTID replication - SOURCE
+# --------------------------------------
+
+server-id=0
+bind-address=<source_ip_address>
+log_bin=<path_to_source_server_log>
+gtid_mode=ON
+enforce-gtid-consistency=ON

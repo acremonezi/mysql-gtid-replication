@@ -1,0 +1,11 @@
+[mysqld]
+
+# GTID replication - REPLICA
+# --------------------------------------
+
+server-id=1
+relay-log=path_to_replica_server_log
+gtid_mode=ON
+enforce-gtid-consistency=ON
+log-replica-updates=ON
+skip-replica-start=ON
